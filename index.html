@@ -1,14 +1,182 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Victor Levy | Portifólio</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=2xFS7aynbwiR&format=png&color=000000">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2d9d5cf85.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <header>
+    <nav>
+      <a href="#sobre" onclick="scrollToSlide(0)">Sobre mim</a>
+      <a href="#skills" onclick="scrollToSlide(1)">Skills</a>
+      <a href="#timeline" onclick="scrollToSlide(2)">Timeline</a>
+      <a href="#projetos" onclick="scrollToSlide(3)">Projetos</a>
+    </nav>
+  </header>
+  <div class="section-wrapper" id="slides">
+    <section class="slide" id="sobre">
+      <div class="container">
+        <div class="about">
+          <img src="https://avatars.githubusercontent.com/u/148262651?v=4" alt="Levy_Avatar" class="avatar">
+          <div>
+            <h1>Hey! I'm <span class="gradient-text">Levy Abreu</span>,<br> a Developer Software</h1>
+            <p class="quote">
+              Sou apaixonado por inovação e levo como inspiração:<br>
+              <em>“The best way to predict the future is to invent it.” - Alan Kay</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="contacts">
+          <div class="buttons">
+            <a href="https://github.com/LevyAbreu" class="btn" target="_blank">
+              <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=FFFFFF" alt="GitHub">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/victor-levy-abreu-276b31275/" class="btn" target="_blank">
+              <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF" alt="LinkedIn">
+              LinkedIn
+            </a>
+          </div>
+  
+          <div class="icons">
+            <a href="https://wa.me/5592994861601" target="_blank" class="icon">
+                <img src="https://img.icons8.com/?size=100&id=16466&format=png&color=FFFFFF" alt="Whatsapp">
+            </a>
+            <a href="https://instagram.com/p4checo.lv" target="_blank" class="icon">
+                <img src="https://img.icons8.com/?size=100&id=Iatym1CIDVkh&format=png&color=FFFFFF" alt="Instagram">
+            </a>
+            <a href="mailto:vlbdsa.vag@gmail.com" target="_blank" class="icon">
+                <img src="https://img.icons8.com/?size=100&id=60987&format=png&color=FFFFFF" alt="Email">
+            </a>
+            <a href="#" target="_blank" class="icon">
+                <img src="https://img.icons8.com/?size=100&id=30888&format=png&color=FFFFFF" alt="Discord">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="slide" id="skills">
+      <div class="container">
+        <h2 class="gradient-text">Skills</h2>
+    
+        <div class="skills-grid">
+          <div class="skill-group1">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React Native</li>
+              <li>Flutter</li>
+            </ul>
+          </div>
+    
+          <div class="skill-group1">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Firebase</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+    
+          <div class="skill-group1">
+            <h3>DevOps & Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Postman</li>
+              <li>Figma (básico)</li>
+            </ul>
+          </div>
+    
+          <div class="skill-group-wide">
+            <h3>Skills adicionais</h3>
+            <ul>
+              <li>Suporte técnico básico</li>
+              <li>Windows 11</li>
+              <li>Microsoft 365 (Word, Excel, Teams, OneDrive, SharePoint)</li>
+              <li>Inglês intermediário (leitura técnica e conversação)</li>
+              <li>Comunicação, trabalho em equipe, organização</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <!-- Timeline -->
+    <section class="slide" id="timeline">
+      <div class="container">
+        <h2 class="gradient-text">Timeline</h2>
+        <ul class="timeline">
+          <li>Analista Financeiro – Nome Limpo Agora (2025 - Atual)</li>
+          <li>Eng. de Software – FAMETRO (2027)</li>
+          <li>Técnico em Desenvolvimento de Sistemas – IFAM (2021)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="slide" id="projetos">
+      <div class="container">
+        <h2 class="gradient-text">Projetos</h2>
+    
+        <div class="project-card">
+          <img src="assets/HealthHub2.png" alt="HealthHub" class="project-img1">
+          <div class="project-info">
+            <h3>HealthHub</h3>
+            <p>Aplicativo de monitoramento de saúde com login, dashboard e registro de dados vitais.</p>
+            <p><strong>Tecnologias:</strong> HTML, JavaScript, Firebase</p>
+            <a href="https://levyabreu.github.io/HealthHub/" target="_blank" class="project-link">Ver Projeto</a>
+          </div>
+        </div>
+    
+        <div class="project-card reverse">
+          <img src="https://via.placeholder.com/300x200" alt="AppMãe" class="project-img2">
+          <div class="project-info">
+            <h3>AppMãe</h3>
+            <p>Aplicativo para gestantes, em desenvolvimento, focado em acompanhamento semanal e dicas.</p>
+            <p><strong>Tecnologias:</strong> Flutter, Firebase</p>
+            <a href="#" class="project-link">Em breve</a>
+          </div>
+        </div>
+    
+        <div class="project-card">
+          <img src="/assets/ClimateSafe1.png" alt="ClimateSafe" class="project-img3">
+          <img src="/assets/ClimateSafe2.png" alt="ClimateSafe" class="project-img3">
+          <div class="project-info">
+            <h3>ClimateSafe</h3>
+            <p>Ferramenta de consulta de clima com alertas para eventos extremos.</p>
+            <p><strong>Tecnologias:</strong> HTML, CSS, JS</p>
+            <a href="https://github.com/LevyAbreu/ClimateSafe" target="_blank" class="project-link">Ver no GitHub</a>
+          </div>
+        </div>
+    
+        <div class="project-card reverse">
+          <img src="/assets/EnglishTips2.png" alt="EnglishTips" class="project-img4">
+          <div class="project-info">
+            <h3>EnglishTips</h3>
+            <p>Site com dicas rápidas de inglês para estudos e reforço do vocabulário técnico.</p>
+            <p><strong>Tecnologias:</strong> HTML, JS</p>
+            <a href="https://levyabreu.github.io/EnglishTips/" target="_blank" class="project-link">Ver Projeto</a>
+          </div>
+        </div>
+    
+      </div>
+    </section>    
+  </div>
+  <div class="blur-bg-layer blur1"></div>
+  <div class="blur-bg-layer blur2"></div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
