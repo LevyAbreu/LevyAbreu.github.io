@@ -310,7 +310,7 @@ h1 {
 /* Projects */
 
 #projetos .container {
-    margin-top: 1000px;
+    margin-top: 30px;
 }
   
 .project-card {
@@ -378,6 +378,26 @@ h1 {
 .project-link:hover {
     background-color: #a78bfa;
     color: #111;
+}
+
+.slide {
+    overflow: hidden;
+}
+  
+.scrollable {
+    max-height: 100vh;
+    overflow-y: auto;
+    padding-right: 10px;
+    scroll-behavior: smooth;
+}
+  
+.scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
