@@ -11,10 +11,10 @@
 <body>
   <header>
     <nav>
-      <a href="#sobre" onclick="scrollToSlide(0)">Sobre mim</a>
-      <a href="#skills" onclick="scrollToSlide(1)">Skills</a>
-      <a href="#timeline" onclick="scrollToSlide(2)">Timeline</a>
-      <a href="#projetos" onclick="scrollToSlide(3)">Projetos</a>
+      <a href="#sobre" data-section="sobre">Sobre mim</a>
+      <a href="#skills" data-section="skills">Skills</a>
+      <a href="#timeline" data-section="timeline">Timeline</a>
+      <a href="#projetos" data-section="projetos">Projetos</a>
     </nav>
   </header>
   <div class="section-wrapper" id="slides">
@@ -26,7 +26,7 @@
             <h1>Hey! I'm <span class="gradient-text">Levy Abreu</span>,<br> a Developer Software</h1>
             <p class="quote">
               Sou apaixonado por inovação e levo como inspiração:<br>
-              <em>“The best way to predict the future is to invent it.” - Alan Kay</em>
+              <em>"The best way to predict the future is to invent it." - Alan Kay</em>
             </p>
           </div>
         </div>
@@ -146,7 +146,8 @@
           </div>
       
           <div class="project-card reverse">
-            <img src="https://via.placeholder.com/300x200" alt="AppMãe" class="project-img2">
+            <img src="./assets/ClimateSafe1.png" alt="ClimateSafe" class="project-img2">
+            <img src="./assets/ClimateSafe2.png" alt="ClimateSafe" class="project-img2">
             <div class="project-info">
               <h3>AppMãe</h3>
               <p>Aplicativo para gestantes, em desenvolvimento, focado em acompanhamento semanal e dicas.</p>
@@ -156,18 +157,18 @@
           </div>
 
           <div class="project-card">
-            <img src="./assets/ClimateSafe1.png" alt="ClimateSafe" class="project-img3">
-            <img src="./assets/ClimateSafe2.png" alt="ClimateSafe" class="project-img3">
+            <img src="./assets/ClimateSafe1.png" alt="ClimateSafe" class="project-img2">
+            <img src="./assets/ClimateSafe2.png" alt="ClimateSafe" class="project-img2">
             <div class="project-info">
               <h3>ClimateSafe</h3>
-              <p>>Aplicativo de mobilidade urbana com alertas climáticos e chat colaborativo entre usuários.</p>
+              <p>Aplicativo de mobilidade urbana com alertas climáticos e chat colaborativo entre usuários.</p>
               <p><strong>Tecnologias:</strong> Flutter, Dart, Flask, CORS, MySQL</p>
               <a href="https://github.com/LevyAbreu/ClimateSafe" target="_blank" class="project-link">Ver no GitHub</a>
             </div>
           </div>
       
           <div class="project-card reverse">
-            <img src="./assets/EnglishTips2.png" alt="EnglishTips" class="project-img4">
+            <img src="./assets/EnglishTips2.png" alt="EnglishTips" class="project-img1">
             <div class="project-info">
               <h3>EnglishTips</h3>
               <p>Projeto colaborativo para ensinar inglês com vídeos, artigos e exercícios acessíveis.</p>
@@ -182,6 +183,7 @@
   <div class="blur-bg-layer blur1"></div>
   <div class="blur-bg-layer blur2"></div>
 
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
+
