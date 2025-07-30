@@ -3,7 +3,7 @@
 Este é meu portfólio online, criado com HTML, CSS e JavaScript, e hospedado via GitHub Pages.
 
 ### 🔗 Acesse o site:
-https://seuusuario.github.io/
+https://LevyAbreu.github.io/
 
 ### 💻 Tecnologias utilizadas:
 - HTML5
@@ -17,4 +17,4 @@ https://seuusuario.github.io/
 
 ---
 
-Feito com 💚 por [Seu Nome]
+Feito com 💚 por [LevyAbreu]
