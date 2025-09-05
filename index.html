@@ -1,189 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Victor Levy | Portifólio</title>
-  <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=2xFS7aynbwiR&format=png&color=000000">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a2d9d5cf85.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levy Abreu - Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
+    <div class="logo">Levy Abreu</div>
     <nav>
-      <a href="#sobre" data-section="sobre">Sobre mim</a>
-      <a href="#skills" data-section="skills">Skills</a>
-      <a href="#timeline" data-section="timeline">Timeline</a>
-      <a href="#projetos" data-section="projetos">Projetos</a>
+      <ul id="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <div id="menu-toggle">&#9776;</div>
     </nav>
   </header>
-  <div class="section-wrapper" id="slides">
-    <section class="slide" id="sobre">
-      <div class="container">
-        <div class="about">
-          <img src="https://avatars.githubusercontent.com/u/148262651?v=4" alt="Levy_Avatar" class="avatar">
-          <div>
-            <h1>Hey! I'm <span class="gradient-text">Levy Abreu</span>,<br> a Developer Software</h1>
-            <p class="quote">
-              Sou apaixonado por inovação e levo como inspiração:<br>
-              <em>"The best way to predict the future is to invent it." - Alan Kay</em>
-            </p>
-          </div>
-        </div>
 
-        <div class="contacts">
-          <div class="buttons">
-            <a href="https://github.com/LevyAbreu" class="btn" target="_blank">
-              <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=FFFFFF" alt="GitHub">
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/victor-levy-abreu-276b31275/" class="btn" target="_blank">
-              <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF" alt="LinkedIn">
-              LinkedIn
-            </a>
-          </div>
-  
-          <div class="icons">
-            <a href="https://wa.me/5592994861601" target="_blank" class="icon">
-                <img src="https://img.icons8.com/?size=100&id=16466&format=png&color=FFFFFF" alt="Whatsapp">
-            </a>
-            <a href="https://instagram.com/p4checo.lv" target="_blank" class="icon">
-                <img src="https://img.icons8.com/?size=100&id=Iatym1CIDVkh&format=png&color=FFFFFF" alt="Instagram">
-            </a>
-            <a href="mailto:vlbdsa.vag@gmail.com" target="_blank" class="icon">
-                <img src="https://img.icons8.com/?size=100&id=60987&format=png&color=FFFFFF" alt="Email">
-            </a>
-            <a href="https://discord.gg/eXfdt5pR" target="_blank" class="icon">
-                <img src="https://img.icons8.com/?size=100&id=30888&format=png&color=FFFFFF" alt="Discord">
-            </a>
-          </div>
+  <section class="hero">
+    <div class="intro">
+      <h2>Olá,</h2>
+      <h1>Sou Levy Abreu</h1>
+      <h3>Desenvolvedor de Softwares Backend</h3>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">Meus Projetos</a>
+        <a href="#contact" class="btn-secondary">Contato</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://avatars.githubusercontent.com/u/148262651?v=4" alt="Victor Levy">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Sobre mim</h2>
+    <p>
+      Desde pequeno, quando, lendo histórias em quadrinhos e assistindo animações de heróis, 
+      percebi que aquilo tudo estava dentro da futura realidade, e iniciei minha paixão 
+      por tecnologia e jornada rumo à inovação da humanidade. Tenho a meta de me tornar 
+      uma das grandes mentes dessa geração e contribuir com o próximo passo da evolução 
+      tecnológica da humanidade, pois como diria Alan Kay:
+    </p>
+    <blockquote>
+      "The best way to predict the future is to invent it."
+    </blockquote>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-group">
+      <h3>Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=20909&format=png" alt=""><p>HTML5</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=21278&format=png" alt=""><p>CSS3</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=108784&format=png" alt=""><p>JavaScript</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png" alt=""><p>React Native</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png" alt=""><p>Flutter</p></div>
+      </div>
+    </div>
+    <div class="skills-group">
+      <h3>Backend</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png" alt=""><p>Node.js</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=ROMfFZ1tMhpk&format=png" alt=""><p>Firebase</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=13679&format=png" alt=""><p>Java</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=13441&format=png" alt=""><p>Python</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png" alt=""><p>MySQL</p></div>
+      </div>
+    </div>
+    <div class="skills-group">
+      <h3>DevOps & Tools</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=20906&format=png" alt=""><p>Git</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=62856&format=png" alt=""><p>GitHub</p></div>
+        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt=""><p>VS Code</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=EPbEfEa7o8CB&format=png" alt=""><p>Postman</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png" alt=""><p>Figma</p></div>
+        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=b8sdBSRPX1RX&format=png" alt=""><p>Scratch</p></div>
+      </div>
+    </div>
+    <div class="skills-group">
+      <h3>Skills adicionais</h3>
+      <ul>
+        <li>POO e programação funcional</li>
+        <li>APIs REST, manutenção lógica de notebooks</li>
+        <li>Redes de computadores, controle de inventário, backups</li>
+        <li>Comunicação, proatividade, trabalho em equipe, organização</li>
+        <li>Inglês (leitura técnica e conversação)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projetos</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/HealthHub.png" alt="HealthHub">
+        <h3>HealthHub</h3>
+        <p>Plataforma de acompanhamento de saúde.</p>
+        <div class="buttons">
+          <a href="https://healthhub-ten.vercel.app" target="_blank" class="btn-primary">Ver Projeto</a>
+          <a href="https://github.com/LevyAbreu/HealthHub" target="_blank" class="btn-secondary">Documentação</a>
         </div>
       </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="slide" id="skills">
-      <div class="container">
-        <h2 class="gradient-text">Skills</h2>
-    
-        <div class="skills-grid">
-          <div class="skill-group1">
-            <h3>Frontend</h3>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>React Native</li>
-              <li>Flutter</li>
-            </ul>
-          </div>
-    
-          <div class="skill-group1">
-            <h3>Backend</h3>
-            <ul>
-              <li>Node.js</li>
-              <li>Firebase</li>
-              <li>Java</li>
-              <li>Python</li>
-              <li>MySQL</li>
-            </ul>
-          </div>
-    
-          <div class="skill-group1">
-            <h3>DevOps & Tools</h3>
-            <ul>
-              <li>Git</li>
-              <li>GitHub</li>
-              <li>VS Code</li>
-              <li>Postman</li>
-              <li>Figma</li>
-              <li>Scratch</li>
-            </ul>
-          </div>
-    
-          <div class="skill-group-wide">
-            <h3>Skills adicionais</h3>
-            <ul>
-              <li>POO e programação funcional</li>
-              <li>APIs REST, manutenção lógica de notebooks</li>
-              <li>Redes de computadores, controle de inventário, backups</li>
-              <li>Comunicação, proatividade, trabalho em equipe, organização</li>
-              <li>Inglês (leitura técnica e conversação)</li>
-            </ul>
-          </div>
+      <div class="project-card">
+        <img src="assets/StayLy.png" alt="StayLy">
+        <h3>StayLy</h3>
+        <p>Gerenciamento de vagas e clientes em hotéis.</p>
+        <div class="buttons">
+          <a href="https://stayly.vercel.app" target="_blank" class="btn-primary">Ver Projeto</a>
+          <a href="https://github.com/LevyAbreu/StayLy" target="_blank" class="btn-secondary">Documentação</a>
         </div>
       </div>
-    </section>    
-
-    <!-- Timeline -->
-    <section class="slide" id="timeline">
-      <div class="scrollable">
-        <div class="container">
-          <h2 class="gradient-text">Timeline</h2>
-          <ul class="timeline">
-            <li>Analista Financeiro – Nome Limpo Agora (2025 - Atual)</li>
-            <li>Eng. de Software – FAMETRO (2027)</li>
-            <li>Técnico em Desenvolvimento de Sistemas – IFAM (2021)</li>
-          </ul>
+      <div class="project-card">
+        <img src="assets/PayPlanner.png" alt="PayPlanner">
+        <h3>PayPlanner</h3>
+        <p>Organização financeira simplificada.</p>
+        <div class="buttons">
+          <a href="https://pay-planner.vercel.app" target="_blank" class="btn-primary">Ver Projeto</a>
+          <a href="https://github.com/LevyAbreu/PayPlanner" target="_blank" class="btn-secondary">Documentação</a>
         </div>
       </div>
-    </section>
+    </div>
+    <a href="https://github.com/LevyAbreu" target="_blank" class="btn-more">View More</a>
+  </section>
 
-    <!-- Projetos -->
-    <section class="slide" id="projetos">
-      <div class="scrollable">
-        <div class="container">
-          <h2 class="gradient-text">Projetos</h2>
-      
-          <div class="project-card">
-            <img src="./assets/HealthHub2.png" alt="HealthHub" class="project-img1">
-            <div class="project-info">
-              <h3>HealthHub</h3>
-              <p>Aplicativo de monitoramento de saúde com login, dashboard e registro de dados vitais.</p>
-              <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript, Firebase</p>
-              <a href="https://levyabreu.github.io/HealthHub/" target="_blank" class="project-link">Ver Projeto</a>
-            </div>
-          </div>
-      
-          <div class="project-card reverse">
-            <img src="./assets/ClimateSafe1.png" alt="ClimateSafe" class="project-img2">
-            <img src="./assets/ClimateSafe2.png" alt="ClimateSafe" class="project-img2">
-            <div class="project-info">
-              <h3>AppMãe</h3>
-              <p>Aplicativo para gestantes, em desenvolvimento, focado em acompanhamento semanal e dicas.</p>
-              <p><strong>Tecnologias:</strong> Flutter, Django-REST, MySQL</p>
-              <a href="#" class="project-link">Ver Projeto</a>
-            </div>
-          </div>
+  <section id="experience">
+    <h2>Experiência Acadêmica</h2>
+    <div class="exp-card"><h3>(Técnico) Desenvolvimento de sistemas</h3><span>2019/2021 - Instituto Federal do Amazonas</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+    <div class="exp-card"><h3>(Licenciatura) Computação</h3><span>2022/2023 - Universidade do Estado do Amazonas</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+    <div class="exp-card"><h3>(Bacharel) Engenharia de Software</h3><span>2023/Atual - Faculdade Metropolitana de Manaus</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+  </section>
 
-          <div class="project-card">
-            <img src="./assets/ClimateSafe1.png" alt="ClimateSafe" class="project-img2">
-            <img src="./assets/ClimateSafe2.png" alt="ClimateSafe" class="project-img2">
-            <div class="project-info">
-              <h3>ClimateSafe</h3>
-              <p>Aplicativo de mobilidade urbana com alertas climáticos e chat colaborativo entre usuários.</p>
-              <p><strong>Tecnologias:</strong> Flutter, Dart, Flask, CORS, MySQL</p>
-              <a href="https://github.com/LevyAbreu/ClimateSafe" target="_blank" class="project-link">Ver no GitHub</a>
-            </div>
-          </div>
-      
-          <div class="project-card reverse">
-            <img src="./assets/EnglishTips2.png" alt="EnglishTips" class="project-img1">
-            <div class="project-info">
-              <h3>EnglishTips</h3>
-              <p>Projeto colaborativo para ensinar inglês com vídeos, artigos e exercícios acessíveis.</p>
-              <p><strong>Tecnologias:</strong> HTML, CSS, JS</p>
-              <a href="https://levyabreu.github.io/EnglishTips/" target="_blank" class="project-link">Ver Projeto</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div class="blur-bg-layer blur1"></div>
-  <div class="blur-bg-layer blur2"></div>
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo pelo GitHub:</p>
+    <a href="https://github.com/LevyAbreu" target="_blank" class="btn-primary">Meu GitHub</a>
+  </section>
 
-  <script src="main.js"></script>
+  <footer>
+    <p>© 2025 - Desenvolvido por Levy Abreu</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
