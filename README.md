@@ -1,9 +1,9 @@
 # Meu Site Pessoal
 
-Este é meu portfólio online, criado com HTML, CSS e JavaScript, e hospedado via GitHub Pages.
+Este é meu portfólio online, criado com HTML, CSS e JavaScript, e hospedado via Vercel.
 
 ### 🔗 Acesse o site:
-https://LevyAbreu.github.io/
+https://portfolio-snowy-two-20.vercel.app
 
 ### 💻 Tecnologias utilizadas:
 - HTML5
@@ -13,8 +13,5 @@ https://LevyAbreu.github.io/
 ### ✨ Funcionalidades:
 - Página sobre mim
 - Projetos
-- Contato com link para redes sociais
-
----
-
-Feito com 💚 por [LevyAbreu]
+- Carreira
+- Contato com link
