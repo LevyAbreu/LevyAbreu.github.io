@@ -311,10 +311,27 @@ footer {
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-img {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   .hero-img img {
-    margin-top: 20px;
+    max-width: 220px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .intro {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   nav ul {
@@ -323,7 +340,8 @@ footer {
     position: absolute;
     top: 70px;
     right: 0;
-    width: 200px;
+    width: 100%;
+    max-width: 250px;
     padding: 20px;
     display: none;
   }
@@ -335,6 +353,81 @@ footer {
   #menu-toggle {
     display: block;
   }
+
+  /* Skills em 2 colunas */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  .skill-card {
+    width: 100%;
+    max-width: 150px;
+    min-height: 160px;
+    padding: 15px;
+  }
+
+  /* Projetos centralizados e menores */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Experiência centralizada */
+  .exp-card {
+    max-width: 320px;
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  /* Texto menor */
+  section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media(max-width: 480px) {
+  .hero-img img {
+    max-width: 180px;
+  }
+
+  .skills-group h3, .skills-group ul {
+    padding: 24px;
+  }
+
+  .skill-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-card {
+    max-width: 130px;
+    min-height: 140px;
+    padding: 12px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro h3 {
+    font-size: 1rem;
+  }
 }
 
 @media(max-width: 600px) {
@@ -342,6 +435,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
