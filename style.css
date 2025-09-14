@@ -213,8 +213,9 @@ blockquote {
   box-shadow: 0 0 20px rgba(255, 77, 77, 0.6);
 }
 
-#projects {
-  text-align: center;
+#projects h2,
+#contact h2 {
+  text-align: left;
 }
 
 .projects-grid {
@@ -289,8 +290,39 @@ blockquote {
   color: #aaa;
 }
 
-#contact {
-  text-align: center;
+.contact-text {
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ff4d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(255, 77, 77, 0.6);
+  transition: 0.3s;
+}
+
+.btn-circle img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.btn-circle:hover {
+  background: #e63939;
+  transform: scale(1.1);
 }
 
 footer {
