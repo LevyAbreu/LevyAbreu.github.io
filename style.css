@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -410,10 +412,22 @@ footer {
     margin: 0 auto;
   }
 
-  .project-card {
-    max-width: 320px;
+  .project-card .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-card .buttons a {
     width: 100%;
-    margin: 0 auto;
+    text-align: center;
+  }
+
+  .btn-more {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto 0;
   }
 
   /* Experiência centralizada */
